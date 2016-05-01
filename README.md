@@ -3,7 +3,7 @@
 ##Purpose
 
 * Simple replacement for traditional LAMP stack on linux-based machines.
-* An nginx reverse proxy is used to expose dockerized local php5-apache2 content based on domain name/alias.
+* An nginx reverse proxy is used to expose dockerized local php5-apache2 content based on domain-name/alias.
 
 ###How-to build
 
