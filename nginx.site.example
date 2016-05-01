@@ -1,0 +1,13 @@
+# Default server configuration
+server {
+	listen 80;
+	server_name your-host-1 your-host-2 your-host-alias-3;
+	root /var/www/html;
+       	index index.php index.html;
+
+       location / {
+				# port 100 is only example, but should match with docker exposed port in run.sh	
+                proxy_pass http://localhost:100;
+                include /etc/nginx/proxy_params;
+       }	
+}
